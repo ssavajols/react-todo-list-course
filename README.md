@@ -1,6 +1,6 @@
-# react-routing-course
+# react-todo-list-course
 
-React training course with routing
+React training course with todo list
 
 - React courses : [https://github.com/ssavajols/react-course](https://github.com/ssavajols/react-course)
 - Démonstration : [https://ssavajols.github.io/react-todo-list-course/](https://ssavajols.github.io/react-todo-list-course/)
