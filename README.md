@@ -18,7 +18,7 @@ npm install
 npm start
 ```
 
-## Lifecycles
+## Components Lifecycle
 
 ![lifecycle](https://ssavajols.github.io/react-todo-list-course/assets/lifecycle.png)
 
