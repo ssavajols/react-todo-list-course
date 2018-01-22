@@ -22,55 +22,12 @@ npm start
 
 ![lifecycle](https://ssavajols.github.io/react-todo-list-course/assets/lifecycle.png)
 
-### componentWillMount
-
-- When
-  - Before initial render, both client and server
-- Why
-  - Good spot to set initial state
-
-### componentDidMount
-
-- When
-  - After render
-- Why
-  - Access DOM, integrate with frameworks, set timers, AJAX requests
-
-### componentWillReceiveProps
-
-- When
-  - When receiving new props.
-  - Not called  on initial render.
-- Why
-  - Set state before a render.
-
-### shouldComponentUpdate
-
-- When
-  - Before render when new props or state are being received.
-  - Not called  on initial render.
-- Why
-  - Performance. Return false to void unnecessary re-renders.
-
-### componentWillUpdate
-
-- When
-  - Immediately before rendering when new props or state are being received.
-  - Not called  on initial render.
-- Why
-  - Preparing for an update.
-
-### componentDidUpdate
-
-- When
-  - After component's updates are flushed to the DOM.
-  - Not called  on initial render.
-- Why
-  - Work with the DOM after an update.
-
-### componentWillUnmount
-
-- When
-  - Immediately before components is removed from the DOM.
-- Why
-  - Cleanup
+| Hook | When | Initial Render | Why use |
+|------|------|----------------|---------|
+| componentWillMount | Before initial render, both client and server | Yes | Good spot to set initial state |
+| componentDidMount | After render | Yes | Access DOM, integrate with frameworks, set timers, AJAX requests |
+| componentWillReceiveProps | When receiving new props. | No | Set state before a render. |
+| shouldComponentUpdate | Before render when new props or state are being received. | No | Performance. Return false to void unnecessary re-renders. |
+| componentWillUpdate | Immediately before rendering when new props or state are being received. | No | Preparing for an update. |
+| componentDidUpdate | After component's updates are flushed to the DOM. | No | Work with the DOM after an update. |
+| componentWillUnmount | Immediately before components is removed from the DOM. | N/A | Cleanup |
